@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My to do list</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Poppins&family=Tulpen+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        
+        ::-webkit-scrollbar{
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }   
+        ::-webkit-scrollbar-thumb{
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Main content -->
+    <div class="container">
+        <input type="text" class="searchbar" placeholder="Search">
+        <div class="box-all">
+            <p id="titleAll">All</p>
+            <h2 id="countAll">0</h2>
+        </div>
+        <div class="my_list">
+            <h2 id="myListsTitle">My lists</h2>
+            <div class="remainders">
+                📃 Remainders
+            </div>
+
+            <button class="create_new_remander">
+                ➕ New Reminder
+            </button>
+            <div class="create_list"></div>
+        </div>
+    </div>
+
+    <!-- Creation reminder conter -->
+    <div class="containerCr">
+        <p id="titleNewR">New Reminder</p>
+        <div class="buttons">
+            <button class="cancel_btn">Cancel</button>
+            <button class="add_btn">Add</button>
+        </div>
+
+        <div class="titles_box">
+            <input type="text" class="name_input" placeholder="Title"><br>
+            <!-- <input type="text" class="note_input" placeholder="Notes"> -->
+        </div>
+    </div>
+
+    <!-- List of Reminders -->
+    <div class="containerList">
+        <h3 id="titleReminders">Reminders</h3>
+
+        <div class="buttonsL">
+            <button id="back_to_lists">< Lists</button>
+        </div>
+        <ul class="remindersLists">
+            <!-- <li>work</li> -->
+        </ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

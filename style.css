@@ -1,0 +1,284 @@
+body {
+    background-color: grey;
+    
+}
+html {
+    scrollbar-width: none;
+}
+
+:root{
+    --background-color: #1d1d1c;
+    --primary-color: #252525;
+    --hover-color: #737270;
+    --not-primary-color: #9c9b9b;
+    --button-color: #0B8BE7;
+    --button-hover-color: #004475;
+    --all_list-color: #EE9C12;
+}
+
+.container{
+    border: 2px solid;
+    border-radius: 15px;
+    width: 320px;
+    height: 500px;
+    margin-left: 40%;
+    background-color: var(--background-color);
+    border-color: var(--background-color);
+    font-family: 'Libre Franklin', sans-serif;
+    display: block;
+}
+.searchbar{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--not-primary-color);
+    margin-top: 15px;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+}
+#myListsTitle{
+    color: var(--all_list-color);
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.box-all{
+    position: relative;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 90%;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+.box-all:hover{
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+#titleAll{
+    margin-left: 5px;
+    margin-top: 30px;
+}
+#countAll{
+    margin-left: 250px;
+    margin-top: -65px;
+}
+
+.my_list{
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-weight: inherit;
+    margin-left: 15px;
+}
+.remainders{
+    border: 2px solid;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    border: none;
+    padding-top: 5px;    
+    cursor: pointer;
+}
+.remainders:hover{
+    background-color: var(--hover-color);
+}
+
+.create_new_remander{
+    margin-top: 80%;
+    color: var(--button-color);
+    background-color: var(--background-color);
+    border: none;
+    font-family: inherit;
+}
+.create_new_remander:hover{
+    color: var(--button-hover-color);
+    cursor: pointer;
+}
+
+/* creating modal */
+.containerCr{
+    display: none;
+    border: 2px solid;
+    border-radius: 15px;
+    margin-left: 40%;
+    padding: 5px;
+    width: 310px;
+    height: 490px;
+    font-family: inherit;
+    background-color: var(--background-color);
+    border-color: var(--background-color);
+}
+
+#titleNewR{
+    margin-left: 35%;
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.buttons{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.cancel_btn{
+    background-color: var(--background-color);
+    border: none;
+    color: var(--button-color);
+    font-family: inherit;
+    position: relative;
+    top: -37px;
+    cursor: pointer;
+}
+.add_btn{
+    background-color: var(--background-color);
+    border: none;
+    color: var(--button-color);
+    position: relative;
+    left: 70%;
+    top: -37px;
+    cursor: pointer;
+}
+.add_btn.unavalble{
+    background-color: var(--background-color);
+    border: none;
+    color: var(--button-hover-color);
+    position: relative;
+    left: 70%;
+    top: -37px;
+    cursor: pointer;
+}
+button:hover{
+    color: var(--button-hover-color);
+}
+
+.titles_box{
+    border: 1px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    border: none;
+}
+.name_input{
+    outline: none;
+    width: 95%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px;
+    line-height: 10px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.note_input{
+    outline: none;
+    width: 95%;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px;
+    position: relative;
+    line-height: 1;
+    height: 100px;
+}
+
+/* container list */
+
+.containerList{
+    display: none;
+    border: 2px solid;
+    border-radius: 15px;
+    margin-left: 40%;
+    padding: 5px;
+    width: 310px;
+    height: 490px;
+    font-family: inherit;
+    background-color: var(--background-color);
+    border-color: var(--background-color);
+    font-family: 'Libre Franklin', sans-serif;
+    overflow: auto;
+}
+#titleReminders{
+    color: var(--all_list-color);
+    font-family: inherit;
+    padding-left: 9px;
+    margin-top: 30px;
+}
+#back_to_lists{
+    color: var(--button-color);
+    background-color: var(--background-color);
+    border: none;
+    position: relative;
+    top: -65px;
+    font-family: inherit;
+    font-weight: bold;
+}
+#back_to_lists:hover{
+    color: var(--button-hover-color);
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-family: inherit;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+    top: -35px;
+    left: -5px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(img/4932-unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: -35px;
+    top: -4px;
+}
+ul li.checked::before{
+    background-image: url(img/3519-checked.png);
+}
+/* ul li span{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-position: center;
+    left: 80%;
+    top: -7px;
+} */
+ul li span:hover::after {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/1590_removed.png);
+    left: 80%;
+    top: -7px;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+ul li span:hover{
+    opacity: 1;
+}
+
+/* scroll bar */
