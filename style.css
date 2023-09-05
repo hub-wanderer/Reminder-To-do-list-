@@ -90,6 +90,26 @@ html {
 .remainders:hover{
     background-color: var(--hover-color);
 }
+#toolTip{
+    display: none;
+    position: relative;
+    color: var(--not-primary-color);
+    top: -40px;
+    left: 55%;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+}
+.fix_issue{
+    color: var(--button-color);
+    margin-top: 80%;
+    margin-left: 60px;
+    background-color: var(--background-color);
+    border: none;
+    cursor: pointer;
+}
+.fix_issue:hover + #toolTip{
+    display: block;
+}
 
 .create_new_remander{
     margin-top: 80%;

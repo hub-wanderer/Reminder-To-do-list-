@@ -13,11 +13,18 @@ const note_input = document.querySelector('.note_input');
 
 const countAll = document.querySelector('#countAll');
 
+const fix_issue_btn = document.querySelector('.fix_issue');
+
 let creation_reminderOpen = false; 
 let list_remindersOpen = false;
 let isChecked = false;
 let isunavalble = true;
 let counts = parseInt(localStorage.getItem('saveCount')) || 0;
+
+fix_issue_btn.addEventListener('click', () => {
+    localStorage.clear();
+    location.reload();
+})
 
 new_remander_btn.addEventListener('click', () => {
     creation_reminderOpen = !creation_reminderOpen;
