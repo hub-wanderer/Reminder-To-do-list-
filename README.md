@@ -24,6 +24,7 @@ The Reminder App is a simple yet powerful application for managing your daily ta
 - User-friendly interface.
 - Minimalistic design for a distraction-free experience.
 - Dark mode support for comfortable nighttime use.
+- When you mark task as complited, it automaticly gets deleted.
 
 ## Getting Started
 
@@ -34,6 +35,6 @@ Before you begin, ensure you have met the following requirements:
 
 ### Installation
 
-1. Clone the repository:
+1. Go to this site:
    ```sh
    https://pmgfnhzidxl8zgyjfiuvww.on.drv.tw/www.js-reminder(iphone).dw/
